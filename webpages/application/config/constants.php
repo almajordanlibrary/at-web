@@ -43,7 +43,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 | application constants
 |---------------------------
 */
-
+define('PAGE_TITLE', 'AT Web');
+define('HTML_TITLE', 'AT Web');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

@@ -23,9 +23,9 @@ class FindingAidsSearch extends CI_Controller {
  //@param array[$data] - an associative array containing the data to be displayed to the user
  function display($page, $data) {
   if (!isset($data['page_title'])) {
-   $data['page_title'] = 'AT Web';
+   $data['page_title'] = PAGE_TITLE;
   }
-  $data['html_title'] = 'AT Web';
+  $data['html_title'] = HTML_TITLE;
   
   $this->load->view('header',$data);
   $this->load->view($page, $data);
@@ -46,7 +46,7 @@ class FindingAidsSearch extends CI_Controller {
  //@param SearchParamsDO[$params] - the search parameters entered by the user
  //@param int $doSearch - flag to say if to do search, 0 means do not perform search, 1 means perform search
  private function searchForm($params, $doSearch) {
-  $data['page_title'] = 'AT Web';
+  $data['page_title'] = PAGE_TITLE;
   
   if ($doSearch == 1) {
    $data['results'] = $this->FindingAidsSearchDAO->doSearch($params);
