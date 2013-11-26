@@ -64,7 +64,7 @@ $db['spcol']['dbcollat'] = 'utf8_general_ci';
 $db['spcol']['swap_pre'] = '';
 $db['spcol']['autoinit'] = TRUE;
 $db['spcol']['stricton'] = FALSE;
-$db['spcol']['port'] = 3307;
+$db['spcol']['port'] = 3306;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
